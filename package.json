@@ -12,7 +12,7 @@
   "scripts": {
     "start": "npm-run-all -s clean build:* -p electron watch:*",
     "test": "jest",
-    "itest": "jest --config=itest/config.json --runInBand --verbose",
+    "itest": "jest --config=itest/config.json --runInBand --verbose --testPathIgnorePatterns external",
     "electron": "electron .",
     "build": "npm-run-all -p build:*",
     "watch": "npm-run-all -s clean build:* watch:*",
